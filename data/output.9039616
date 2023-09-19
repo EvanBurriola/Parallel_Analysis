@@ -1,0 +1,35 @@
+ thread affinity/proc_bind = 
+close
+Max threads: 64
+Matrix Size: 128
+Producing random values 
+A Matrix: 
+L Matrix: 
+U Matrix:
+Path                  Time (E) Time (I) Time % (E) Time % (I) 
+main                  0.001840 0.032965   5.406027  96.876524 
+  initialize_matrices 0.000094 0.000094   0.277556   0.277556 
+  random_fill         0.000216 0.000216   0.635896   0.635896 
+  l_u_d               0.030815 0.030815  90.557045  90.557045 
+=====================JOB DIAGNOTICS========================
+Mon Sep 18 13:57:36 CDT 2023
+This machine is c200.cluster
+My jobid is 9039616
+My path is:
+/sw/eb/sw/CMake/3.12.1-GCCcore-7.3.0/bin:/sw/eb/sw/cURL/7.60.0-GCCcore-7.3.0/bin:/sw/eb/sw/bzip2/1.0.6-GCCcore-7.3.0/bin:/sw/eb/sw/ncurses/6.1-GCCcore-7.3.0/bin:/sw/eb/sw/GCCcore/7.3.0/bin:/home/evanburriola12/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/bin/remote-cli:/usr/lib64/qt-3.3/bin:/sw/local/bin:/usr/local/bin:/usr/bin:/usr/lpp/mmfs/bin:/usr/local/sbin:/usr/sbin:/home/evanburriola12/.local/bin:/home/evanburriola12/bin
+PARTITION AVAIL  TIMELIMIT   NODES(A/I/O/T) NODELIST
+short*       up    2:00:00     714/0/86/800 c[001-800]
+medium       up 1-00:00:00     714/0/86/800 c[001-800]
+long         up 7-00:00:00     714/0/86/800 c[001-800]
+xlong        up 21-00:00:0     714/0/86/800 c[001-800]
+vnc          up   12:00:00     63/42/12/117 g[001-100],r[001-009],t[001-008]
+gpu          up 4-00:00:00     63/42/12/117 g[001-100],r[001-009],t[001-008]
+bigmem       up 2-00:00:00          7/0/1/8 b[001-008]
+special      up 7-00:00:00    777/42/98/917 c[001-800],g[001-100],r[001-009],t[001-008]
+gpu-a40      up 4-00:00:00        5/10/0/15 g[101-115]
+My job info:
+JOBID        NAME                 USER                     PARTITION              NODES  CPUS  STATE        TIME         TIME_LEFT    START_TIME         REASON                   NODELIST
+9039616      openmpcode           evanburriola12           short                  1      48    RUNNING      0:05         14:55        2023-09-18T13:57:3 None                     c200
+Machine info
+ 
+========================ALL DONE===========================

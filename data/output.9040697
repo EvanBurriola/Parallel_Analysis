@@ -1,0 +1,35 @@
+ thread affinity/proc_bind = 
+close
+Max threads: 16
+Matrix Size: 128
+Producing random values 
+A Matrix: 
+L Matrix: 
+U Matrix:
+Path                  Time (E) Time (I) Time % (E) Time % (I) 
+main                  0.001860 0.004921  30.162974  79.807410 
+  initialize_matrices 0.000134 0.000134   2.178082   2.178082 
+  random_fill         0.000207 0.000207   3.364637   3.364637 
+  l_u_d               0.002719 0.002719  44.101717  44.101717 
+=====================JOB DIAGNOTICS========================
+Mon Sep 18 17:48:16 CDT 2023
+This machine is c710.cluster
+My jobid is 9040697
+My path is:
+/sw/eb/sw/CMake/3.12.1-GCCcore-7.3.0/bin:/sw/eb/sw/cURL/7.60.0-GCCcore-7.3.0/bin:/sw/eb/sw/bzip2/1.0.6-GCCcore-7.3.0/bin:/sw/eb/sw/ncurses/6.1-GCCcore-7.3.0/bin:/sw/eb/sw/GCCcore/7.3.0/bin:/home/evanburriola12/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/bin/remote-cli:/usr/lib64/qt-3.3/bin:/sw/local/bin:/usr/local/bin:/usr/bin:/usr/lpp/mmfs/bin:/usr/local/sbin:/usr/sbin:/home/evanburriola12/.local/bin:/home/evanburriola12/bin
+PARTITION AVAIL  TIMELIMIT   NODES(A/I/O/T) NODELIST
+short*       up    2:00:00     713/0/87/800 c[001-800]
+medium       up 1-00:00:00     713/0/87/800 c[001-800]
+long         up 7-00:00:00     713/0/87/800 c[001-800]
+xlong        up 21-00:00:0     713/0/87/800 c[001-800]
+vnc          up   12:00:00     79/26/12/117 g[001-100],r[001-009],t[001-008]
+gpu          up 4-00:00:00     79/26/12/117 g[001-100],r[001-009],t[001-008]
+bigmem       up 2-00:00:00          7/0/1/8 b[001-008]
+special      up 7-00:00:00    792/26/99/917 c[001-800],g[001-100],r[001-009],t[001-008]
+gpu-a40      up 4-00:00:00        5/10/0/15 g[101-115]
+My job info:
+JOBID        NAME                 USER                     PARTITION              NODES  CPUS  STATE        TIME         TIME_LEFT    START_TIME         REASON                   NODELIST
+9040697      openmpcode           evanburriola12           short                  1      48    RUNNING      0:03         14:57        2023-09-18T17:48:1 None                     c710
+Machine info
+ 
+========================ALL DONE===========================
